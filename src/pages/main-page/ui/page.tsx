@@ -11,7 +11,7 @@ export const MainPage = () => {
             <Navbar />
             <Container className='flex flex-col flex-1 items-center justify-center gap-y-4'>
                 <div className='flex items-center gap-x-3'>
-                    <Icon className='w-[55px] h-[55px] md:w-[130px] md:h-[130px]' type={'gozle-store-logo'} />
+                    <Icon className='w-[55px] h-[55px] md:w-[90px] md:h-[90px]' type={'gozle-store-logo'} />
                     <h1 className='text-[#515151] font-medium text-[28px] md:text-[48px]'>Gozle Store</h1>
                 </div>
                 <h2 className='text-[#515151] text-[25px] md:text-[45px] font-medium text-center'>{t('gameStore')}</h2>
