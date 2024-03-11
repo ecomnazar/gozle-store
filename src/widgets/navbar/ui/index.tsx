@@ -14,9 +14,11 @@ export const Navbar = () => {
         <>
             <nav className='py-4 md:py-8 border-b border-[#D9D9D9]'>
                 <Container className='flex items-center justify-between'>
-                    <Link to={'/'} className='flex items-center gap-x-1'>
+                    <Link to={'/'} className='flex items-center gap-x-2'>
+                        <Icon type='gozle-store-logo-mini' />
+                        {/* 
                         <Icon className='w-[35px] h-[35px] md:w-[45px] md:h-[45px]' type={'gozle-store-logo'} />
-                        <h1 className='text-[#515151] font-medium text-[20px]'>Gozle Store</h1>
+                        <h1 className='text-[#515151] font-semibold text-[20px]'>Gozle Store</h1> */}
                     </Link>
                     <div className='hidden md:flex items-center gap-x-20'>
                         <Link to={'/departments'} className='flex items-center gap-x-6'>
@@ -24,8 +26,8 @@ export const Navbar = () => {
                             <h3 className='text-[#08B26C] font-medium text-xl'>{t('giftCards')}</h3>
                         </Link>
                         <a href='https://store.gozle.com.tm/chat/web/' target='_blank' className='flex items-center gap-x-6'>
-                            <h3 className='text-[#22BCF7] font-medium text-xl'>{t('onlineSupport')}</h3>
                             <Icon type={'support'} />
+                            <h3 className='text-[#22BCF7] font-medium text-xl'>{t('onlineSupport')}</h3>
                         </a>
                     </div>
                     <div className='flex items-center gap-x-6'>

@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next'
 import { Listbox, Transition } from '@headlessui/react'
 import { Icon } from '../icon'
 import clsx from 'clsx'
+import { IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown } from "react-icons/io";
 
 interface Props {
     className?: string
@@ -16,11 +18,15 @@ export const LanguageSwithcer: React.FC<Props> = ({ className }) => {
     return (
         <Listbox value={selected} onChange={setSelected}>
             <div className={clsx("relative", className)}>
-                <Listbox.Button className="relative w-full  rounded-lg bg-white py-3 px-4 flex items-center gap-x-2 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white/75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
+                <Listbox.Button className="relative w-full  rounded-lg bg-white py-3 px-4 flex items-center gap-x-2 text-left focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white/75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
                     {selected === 'tm' && <Icon type={`tm-logo`} />}
                     {selected === 'ru' && <Icon type={`ru-logo`} />}
                     {selected === 'en' && <Icon type={`en-logo`} />}
                     <span className="block truncate font-medium ">{selected.toUpperCase()}</span>
+                    <div>
+                        <IoIosArrowUp className='translate-y-[3px]' size={13} />
+                        <IoIosArrowDown className='-translate-y-[2px]' size={13} />
+                    </div>
                 </Listbox.Button>
                 <Transition
                     as={React.Fragment}

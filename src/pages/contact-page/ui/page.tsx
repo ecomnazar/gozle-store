@@ -14,7 +14,6 @@ export const ContactPage = () => {
                     <h4 className='font-medium text-[22px] mb-4'>{t('technicalSupport')}</h4>
                     <ul className='space-y-2 font-medium'>
                         <li><a href="mailto:sales@gozle.store">sales@gozle.store</a></li>
-
                     </ul>
                 </div>
                 <div>
