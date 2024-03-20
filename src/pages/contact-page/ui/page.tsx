@@ -13,25 +13,25 @@ export const ContactPage = () => {
                     <h3 className='font-bold text-[24px]'>{t('contacts')}</h3>
                     <h4 className='font-medium text-[22px] mb-4'>{t('technicalSupport')}</h4>
                     <ul className='space-y-2 font-medium'>
-                        <li><a href="mailto:sales@gozle.store">sales@gozle.store</a></li>
+                        <li><a href="mailto:sales@gozle.store">support@gozle.org</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 className='font-medium text-[22px] mb-4'>{t('salesDepartment')}</h4>
                     <ul className='space-y-2 font-medium'>
-                        <li><a href="mailto:sales@gozle.store">sales@gozle.store</a></li>
+                        <li><a href="mailto:sales@gozle.store">sales@gozle.org</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 className='font-medium text-[22px] mb-4'>{t('forContact')}</h4>
                     <ul className='space-y-2 font-medium'>
-                        <li><a href="mailto:sales@gozle.store">press@gozle.store</a></li>
+                        <li><a href="mailto:sales@gozle.store">press@gozle.org</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 className='font-medium text-[22px] mb-4'>{t('errorReports')}</h4>
                     <ul className='space-y-2 font-medium'>
-                        <li><a href="mailto:sales@gozle.store">bugs@gozle.store</a></li>
+                        <li><a href="mailto:sales@gozle.store">bugs@gozle.org</a></li>
                     </ul>
                 </div>
             </Container>
