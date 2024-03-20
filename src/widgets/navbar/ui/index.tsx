@@ -25,7 +25,7 @@ export const Navbar = () => {
                             <Icon type={'gift-cart'} />
                             <h3 className='text-[#08B26C] font-medium text-xl'>{t('giftCards')}</h3>
                         </Link>
-                        <a href='https://store.gozle.com.tm/chat/web/' target='_blank' className='flex items-center gap-x-6'>
+                        <a href='https://store.gozle.org/chat/web/' target='_blank' className='flex items-center gap-x-6'>
                             <Icon type={'support'} />
                             <h3 className='text-[#22BCF7] font-medium text-xl'>{t('onlineSupport')}</h3>
                         </a>
